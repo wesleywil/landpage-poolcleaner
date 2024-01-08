@@ -1,5 +1,8 @@
 ---
+import AdditionalDetailsCard from "../components/AdditionalDetailsCard.astro";
+import FaqCard from "../components/FaqCard.astro";
 import FeatureCard from "../components/FeatureCard.astro";
+import TestimonialsCard from "../components/TestimonialsCard.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -24,7 +27,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </section>
     <!--  -->
-    <section class="w-screen h-screen p-2 font-bold text-white">
+    <section class="w-full p-2 text-white">
       <h1 class="text-3xl text-center">Features</h1>
       <div class="mt-2 flex md:flex-wrap justify-center gap-4">
         <FeatureCard
@@ -42,6 +45,94 @@ import Layout from "../layouts/Layout.astro";
         <FeatureCard
           title="Eco-Friendly Solutions"
           text="Environmentally conscious cleaning practices"
+        />
+      </div>
+    </section>
+    <!-- Social Proof - Testimonials -->
+    <section class="w-screen p-2 bg-slate-700 text-white">
+      <h1 class="text-3xl text-center">Testimonials</h1>
+      <div class="mt-2 flex justify-center flex-wrap gap-2">
+        <TestimonialsCard
+          title="Relieved Homeowner"
+          text="I was struggling to maintain my pool until I found this service. They took charge and made my pool look brand new. Now, I can relax and enjoy the water worry-free. Thank you for your exceptional work!"
+          photo="/testimonials/01.webp"
+          author="Sarah L."
+        />
+        <TestimonialsCard
+          title="Happy Pool Owner"
+          text="Absolutely thrilled with the transformation! Our pool went from cloudy to crystal clear in no time. The team's professionalism and attention to detail are unmatched. Highly recommend their service!"
+          photo="/testimonials/02.webp"
+          author="John T."
+        />
+        <TestimonialsCard
+          title="Impressed Customer"
+          text="From the first consultation to the regular maintenance, I've been impressed. Their dedication to not just cleaning but also educating pool owners is commendable. The results speak for themselves—my pool has never been better!"
+          photo="/testimonials/03.webp"
+          author="David R."
+        />
+        <TestimonialsCard
+          title="Satisfied Customer"
+          text="A friend recommended this service, and I'm so glad I listened. The team is reliable, knowledgeable, and genuinely cares about the health of my pool. I've found my go-to for all things pool-related!"
+          photo="/testimonials/04.webp"
+          author="Emma S."
+        />
+        <TestimonialsCard
+          title="Delighted Pool Enthusiast"
+          text="I've used various pool services before, but none come close to the quality I experienced here. They don't just clean; they rejuvenate! My pool is now the highlight of my backyard, thanks to their consistent, top-notch service."
+          photo="/testimonials/05.webp"
+          author="Michael H."
+        />
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="w-screen p-2 bg-gray-700 text-white">
+      <h1 class="text-3xl text-center">Gallery</h1>
+      <div class="mt-2 flex flex-wrap gap-2 justify-center">
+        <img src="/gallery/1.webp" alt="pool" />
+        <img src="/gallery/2.webp" alt="pool" />
+        <img src="/gallery/3.webp" alt="pool" />
+        <img src="/gallery/4.webp" alt="pool" />
+        <img src="/gallery/5.webp" alt="pool" />
+        <img src="/gallery/6.webp" alt="pool" />
+        <img src="/gallery/7.webp" alt="pool" />
+        <img src="/gallery/8.webp" alt="pool" />
+        <img src="/gallery/9.webp" alt="pool" />
+        <img src="/gallery/10.webp" alt="pool" />
+      </div>
+    </section>
+    <!-- Additional Details -->
+    <section class="w-screen p-2 bg-gray-800 text-white">
+      <h1 class="text-3xl text-center font-bold">Additional Details</h1>
+      <div class="mt-2 flex justify-center gap-2">
+        <AdditionalDetailsCard
+          title="Unique Methodology"
+          text="At [Company Name], we revolutionize pool cleaning with our advanced methodology. We employ a tailored approach, utilizing cutting-edge technology alongside time-tested techniques. Our process isn't just about cleaning; it's a comprehensive rejuvenation. We meticulously analyze water quality, employ eco-friendly solutions, and utilize state-of-the-art equipment for an unparalleled clean. Experience the difference with our innovative approach to pool care."
+        />
+        <AdditionalDetailsCard
+          title="Problem-Solving Expertise"
+          text="Pool problems? Consider them solved. From stubborn algae to pH imbalance, our seasoned experts have encountered and conquered various pool issues. Leverage our team's expertise in diagnosing and resolving common pool woes. We proactively address potential problems before they escalate, ensuring your pool stays pristine. Trust us to tackle the challenges, so you can dive into worry-free relaxation."
+        />
+        <AdditionalDetailsCard
+          title="Service Guarantees"
+          text="Our commitment to your satisfaction is unwavering. We stand behind our service with a rock-solid guarantee. If you're not completely satisfied with the results, we'll revisit and rectify the issue promptly, no questions asked. Our goal isn't just a clean pool; it's your absolute delight and peace of mind. Experience top-tier service and the assurance of quality—your satisfaction is our priority."
+        />
+      </div>
+    </section>
+    <!-- FAQs -->
+    <section class="w-screen p-2 pb-4 bg-gray-700 text-white">
+      <h1 class="text-3xl text-center font-bold">FAQs</h1>
+      <div class="mt-2 flex flex-col items-center gap-2">
+        <FaqCard
+          question="What's included in your cleaning packages?"
+          answer="Our cleaning packages are comprehensive and tailored to meet your pool's specific needs. They typically include skimming the surface, brushing the walls, vacuuming, emptying baskets, testing and balancing water chemistry, and inspecting equipment for optimal functionality. We offer various packages, each with its level of service, ensuring your pool receives the care it requires."
+        />
+        <FaqCard
+          question="How often should my pool be cleaned?"
+          answer="The frequency of pool cleaning depends on several factors, including usage, weather conditions, and the pool's size and location. As a general guideline, we recommend weekly or bi-weekly cleaning to maintain optimal cleanliness and water quality. However, our experts can assess your pool's unique requirements during an initial consultation and recommend a tailored cleaning schedule that suits your needs."
+        />
+        <FaqCard
+          question="Are your cleaning products safe for children/pets?"
+          answer="Absolutely. We prioritize the safety of your loved ones and the environment. Our cleaning products are carefully chosen and formulated to be safe for both children and pets while effectively maintaining a clean and healthy pool. We use eco-friendly and non-toxic solutions, ensuring a pristine pool without compromising on safety. Your family's well-being is our priority."
         />
       </div>
     </section>
