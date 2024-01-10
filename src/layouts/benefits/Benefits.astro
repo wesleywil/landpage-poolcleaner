@@ -2,22 +2,26 @@
 import FeatureCard from "../../components/FeatureCard.astro";
 ---
 
-<section class="w-full p-2 text-white">
-  <h1 class="text-3xl text-center">Features</h1>
-  <div class="mt-2 flex md:flex-wrap justify-center gap-4">
+<section class="w-full p-2 py-8 bg-[#e2e4ec] text-[#283137]">
+  <!-- <h1 class="text-5xl text-center font-bold">Benefits</h1> -->
+  <div class="mt-4 flex md:flex-wrap justify-center gap-4">
     <FeatureCard
+      icon="pajamas:issue-type-maintenance"
       title="Spotless Maintenance"
       text="Regular cleaning to keep your pool crystal clear"
     />
     <FeatureCard
+      icon="mdi:account-hard-hat"
       title="Expert Technicians"
       text="Trained professionals ensuring thorough care."
     />
     <FeatureCard
+      icon="mingcute:scissors-fill"
       title="Tailored Services"
       text="Customized plans to suit your pool's unique needs."
     />
     <FeatureCard
+      icon="mdi:ecology"
       title="Eco-Friendly Solutions"
       text="Environmentally conscious cleaning practices"
     />
