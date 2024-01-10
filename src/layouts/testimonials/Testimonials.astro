@@ -2,38 +2,61 @@
 import TestimonialsCard from "../../components/TestimonialsCard.astro";
 ---
 
-<section class="w-screen p-2 bg-slate-700 text-white">
-  <h1 class="text-3xl text-center">Testimonials</h1>
-  <div class="mt-2 flex justify-center flex-wrap gap-2">
-    <TestimonialsCard
-      title="Relieved Homeowner"
-      text="I was struggling to maintain my pool until I found this service. They took charge and made my pool look brand new. Now, I can relax and enjoy the water worry-free. Thank you for your exceptional work!"
-      photo="/testimonials/01.webp"
-      author="Sarah L."
-    />
-    <TestimonialsCard
-      title="Happy Pool Owner"
-      text="Absolutely thrilled with the transformation! Our pool went from cloudy to crystal clear in no time. The team's professionalism and attention to detail are unmatched. Highly recommend their service!"
-      photo="/testimonials/02.webp"
-      author="John T."
-    />
-    <TestimonialsCard
-      title="Impressed Customer"
-      text="From the first consultation to the regular maintenance, I've been impressed. Their dedication to not just cleaning but also educating pool owners is commendable. The results speak for themselves—my pool has never been better!"
-      photo="/testimonials/03.webp"
-      author="David R."
-    />
-    <TestimonialsCard
-      title="Satisfied Customer"
-      text="A friend recommended this service, and I'm so glad I listened. The team is reliable, knowledgeable, and genuinely cares about the health of my pool. I've found my go-to for all things pool-related!"
-      photo="/testimonials/04.webp"
-      author="Emma S."
-    />
-    <TestimonialsCard
-      title="Delighted Pool Enthusiast"
-      text="I've used various pool services before, but none come close to the quality I experienced here. They don't just clean; they rejuvenate! My pool is now the highlight of my backyard, thanks to their consistent, top-notch service."
-      photo="/testimonials/05.webp"
-      author="Michael H."
-    />
+<section class="w-screen p-2 text-[#e2e4ec] border-b">
+  <h1 class="text-4xl text-center font-bold">Testimonials</h1>
+  <div
+    class="md:w-[900px] mx-auto mt-4 flex gap-2 justify-center overflow-hidden"
+  >
+    <div class="flex gap-2 animate">
+      <TestimonialsCard
+        title="Relieved Homeowner"
+        text="I was struggling to maintain my pool until I found this service. They took charge and made my pool look brand new. Now, I can relax and enjoy the water worry-free. Thank you for your exceptional work!"
+        photo="/testimonials/01.webp"
+        author="Sarah L."
+      />
+      <TestimonialsCard
+        title="Happy Pool Owner"
+        text="Absolutely thrilled with the transformation! Our pool went from cloudy to crystal clear in no time. The team's professionalism and attention to detail are unmatched. Highly recommend their service!"
+        photo="/testimonials/02.webp"
+        author="John T."
+      />
+      <TestimonialsCard
+        title="Impressed Customer"
+        text="From the first consultation to the regular maintenance, I've been impressed. Their dedication to not just cleaning but also educating pool owners is commendable. The results speak for themselves—my pool has never been better!"
+        photo="/testimonials/03.webp"
+        author="David R."
+      />
+      <TestimonialsCard
+        title="Satisfied Customer"
+        text="A friend recommended this service, and I'm so glad I listened. The team is reliable, knowledgeable, and genuinely cares about the health of my pool. I've found my go-to for all things pool-related!"
+        photo="/testimonials/04.webp"
+        author="Emma S."
+      />
+      <TestimonialsCard
+        title="Delighted Pool Enthusiast"
+        text="I've used various pool services before, but none come close to the quality I experienced here. They don't just clean; they rejuvenate! My pool is now the highlight of my backyard, thanks to their consistent, top-notch service."
+        photo="/testimonials/05.webp"
+        author="Michael H."
+      />
+    </div>
   </div>
 </section>
+
+<style>
+  @keyframes testimonials_animate {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+
+  .animate {
+    animation: testimonials_animate 15s alternate-reverse infinite ease;
+  }
+
+  .animate:hover {
+    animation-play-state: paused;
+  }
+</style>

@@ -1,15 +1,19 @@
 ---
+import { Icon } from "astro-iconify";
+
 interface Props {
+  icon: string;
   title: string;
   text: string;
 }
 
-const { title, text } = Astro.props;
+const { icon, title, text } = Astro.props;
 ---
 
-<div class="w-80 flex flex-col items-center gap-1 text-center border rounded">
-  <h2 class="w-full bg-yellow-200 text-black text-xl border-b">{title}</h2>
-  <p class="p-2 text-sm">
+<div class="w-80 flex flex-col items-center gap-1 text-center">
+  <Icon name={icon} class="w-16 text-[#00b2e1]" />
+  <h2 class="w-full text-[#00b2e1] text-3xl font-semibold">{title}</h2>
+  <p class="p-2 text-xl">
     {text}
   </p>
 </div>
