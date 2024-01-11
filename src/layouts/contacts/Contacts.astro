@@ -1,43 +1,46 @@
-<section class="w-screen p-2 pb-4 text-white border-b">
-  <h1 class="text-3xl text-center font-bold">Contact</h1>
-  <div class="mt-2 flex gap-4 justify-center">
-    <div class="p-2 bg-white rounded">
-      <h2 class="text-2xl text-black font-semibold">Contact Us</h2>
-      <h3 class="my-1 text-base text-slate-500">Send us a message</h3>
-      <form class="flex flex-col gap-2 text-black">
+<section id="contact" class="w-screen p-2 py-8 bg-[#e2e4ec] text-[#283137]">
+  <h1 class="text-4xl text-center font-bold">Contact</h1>
+  <div
+    class="mt-4 flex xl:flex-row md:flex-col-reverse justify-center md:items-center xl:items-start md:text-center xl:text-left gap-4"
+  >
+    <div class="p-2 bg-[#283137] text-[#e2e4ec] rounded shadow-sm">
+      <h2 class="text-3xl font-semibold">Contact Us</h2>
+      <h3 class="my-1 text-base text-slate-300">Send us a message</h3>
+      <form class="flex flex-col text-[#283137] gap-2">
         <input
           type="email"
           placeholder="Email"
-          class="px-2 py-1 outline-0 border-2 border-slate-700 rounded"
+          class="px-2 py-1 outline-0 border border-[#00b2e1] rounded"
         />
         <div class="flex gap-2">
           <input
             type="text"
             placeholder="First Name"
-            class="px-2 py-1 outline-0 border-2 border-slate-700 rounded"
+            class="px-2 py-1 outline-0 border border-[#00b2e1] rounded"
           />
           <input
             type="text"
             placeholder="Last Name"
-            class="px-2 py-1 outline-0 border-2 border-slate-700 rounded"
+            class="px-2 py-1 outline-0 border border-[#00b2e1] rounded"
           />
         </div>
         <textarea
           rows="10"
-          class="px-2 py-1 outline-0 border-2 border-slate-700 rounded"
+          placeholder="Message"
+          class="px-2 py-1 outline-0 border border-[#00b2e1] rounded"
         ></textarea>
         <button
-          class="px-2 py-1 text-xl font-bold bg-green-600 hover:bg-green-400 rounded transform duration-500 ease-in-out"
+          class="px-2 py-1 text-xl text-[#e2e4ec] hover:text-[#283137] font-bold bg-[#00b2e1]/70 hover:bg-[#00b2e1] rounded transform duration-500 ease-in-out"
           >Submit</button
         >
       </form>
     </div>
     <div class="w-96 p-2">
-      <h3 class="mb-2 text-2xl font-semibold">Contact details</h3>
-      <h4 class="mb-1 text-xl text-green-400">E-mail</h4>
-      <span>poolcleaner@mail.com</span>
-      <h4 class="mb-1 text-xl text-green-400">Phone</h4>
-      <span>00 000-0000</span>
+      <h3 class="mb-2 text-3xl font-semibold">Contact details</h3>
+      <h4 class="mb-1 text-2xl text-[#00b2e1]">E-mail</h4>
+      <span class="text-xl font-semibold">aquaclear@mail.com</span>
+      <h4 class="mb-1 text-2xl text-[#00b2e1]">Phone</h4>
+      <span class="text-xl font-semibold">00 000-0000</span>
     </div>
   </div>
 </section>

@@ -1,11 +1,13 @@
 ---
-
+import Nav from "../../components/Nav.astro";
 ---
 
 <section
   style="background-image: url('/hero_image.webp');"
-  class="w-screen h-screen text-5xl font-bold text-[#e2e4ec] bg-fixed border-b"
+  class="w-screen h-[95vh] text-5xl font-bold text-[#e2e4ec] bg-fixed border-b"
 >
+  <!-- Navbar -->
+  <Nav />
   <div class="w-full h-full flex justify-center">
     <div
       class="self-center w-full h-fit py-24 flex flex-col gap-2 justify-center items-center bg-[#283137]/20 backdrop-blur-sm"
