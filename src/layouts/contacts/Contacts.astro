@@ -1,46 +1,54 @@
-<section id="contact" class="w-screen p-2 py-8 bg-[#e2e4ec] text-[#283137]">
-  <h1 class="text-4xl text-center font-bold">Contact</h1>
-  <div
-    class="mt-4 flex xl:flex-row md:flex-col-reverse justify-center md:items-center xl:items-start md:text-center xl:text-left gap-4"
-  >
-    <div class="p-2 bg-[#283137] text-[#e2e4ec] rounded shadow-sm">
-      <h2 class="text-3xl font-semibold">Contact Us</h2>
-      <h3 class="my-1 text-base text-slate-300">Send us a message</h3>
-      <form class="flex flex-col text-[#283137] gap-2">
+<section
+  id="contact"
+  class="w-screen p-2 py-8 bg-[#e2e4ec] text-[#283137]"
+  style="background-image: url('/contact_bg.svg'); background-size: contain; background-position:center; background-repeat: no-repeat;"
+>
+  <div class="h-full flex gap-4 justify-center backdrop-blur-sm">
+    <img
+      src="/contact.webp"
+      alt="contact"
+      class="block md:hidden xl:block w-96 rounded opacity-90 shadow-md backdrop-blur-sm"
+    />
+    <div
+      class="pb-4 flex flex-col gap-2 bg-[#283137]/50 rounded shadow-md overflow-hidden"
+    >
+      <h2 class="px-2 py-1 bg-[#283137] text-4xl text-[#e2e4ec] font-bold">
+        Mark your avaluation now. Contact Us
+      </h2>
+      <form class="p-4 flex flex-col text-xl text-white gap-2">
         <input
           type="email"
           placeholder="Email"
-          class="px-2 py-1 outline-0 border border-[#00b2e1] rounded"
+          class="px-2 py-1 outline-0 bg-transparent placeholder-slate-700 border-b-2 border-[#e2e4ec] focus:border-[#00b2e1] rounded transform duration-500 ease-in-out"
         />
         <div class="flex gap-2">
           <input
             type="text"
             placeholder="First Name"
-            class="px-2 py-1 outline-0 border border-[#00b2e1] rounded"
+            class="grow px-2 py-1 outline-0 bg-transparent placeholder-slate-700 border-b-2 border-[#e2e4ec] focus:border-[#00b2e1] rounded transform duration-500 ease-in-out"
           />
           <input
             type="text"
             placeholder="Last Name"
-            class="px-2 py-1 outline-0 border border-[#00b2e1] rounded"
+            class="grow px-2 py-1 outline-0 bg-transparent placeholder-slate-700 border-b-2 border-[#e2e4ec] focus:border-[#00b2e1] rounded transform duration-500 ease-in-out"
           />
         </div>
         <textarea
-          rows="10"
+          rows="3"
           placeholder="Message"
-          class="px-2 py-1 outline-0 border border-[#00b2e1] rounded"
+          class="px-2 py-1 outline-0 bg-transparent placeholder-slate-700 border-b-2 border-[#e2e4ec] focus:border-[#00b2e1] rounded transform duration-500 ease-in-out"
         ></textarea>
         <button
-          class="px-2 py-1 text-xl text-[#e2e4ec] hover:text-[#283137] font-bold bg-[#00b2e1]/70 hover:bg-[#00b2e1] rounded transform duration-500 ease-in-out"
-          >Submit</button
+          class="px-2 py-1 text-xl text-[#283137] hover:text-[#e2e4ec] font-bold bg-[#00b2e1] hover:bg-[#283137] rounded transform duration-500 ease-in-out"
+          >SEND</button
         >
       </form>
-    </div>
-    <div class="w-96 p-2">
-      <h3 class="mb-2 text-3xl font-semibold">Contact details</h3>
-      <h4 class="mb-1 text-2xl text-[#00b2e1]">E-mail</h4>
-      <span class="text-xl font-semibold">aquaclear@mail.com</span>
-      <h4 class="mb-1 text-2xl text-[#00b2e1]">Phone</h4>
-      <span class="text-xl font-semibold">00 000-0000</span>
+      <div class="p-2 text-center font-bold">
+        <h4 class="mb-1 text-2xl text-[#e2e4ec]">E-mail</h4>
+        <span class="text-xl font-semibold">aquaclear@mail.com</span>
+        <h4 class="mb-1 text-2xl text-[#e2e4ec]">Phone</h4>
+        <span class="text-xl font-semibold">12 345-6789</span>
+      </div>
     </div>
   </div>
 </section>
