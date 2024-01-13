@@ -12,6 +12,7 @@ Landing page for a fictional company that provides a pool cleaning services
 ## Screenshots
 
 ### Demo
+https://i.imgur.com/h8U7vDY.gif
 ![Homepage](https://i.imgur.com/h8U7vDY.gif)
 
 
